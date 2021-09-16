@@ -1,0 +1,11 @@
+<!DOCTYPE HTML><html lang="en-us"><head><meta charset="utf-8"><title>Template.html</title><script>function makeAdress() {
+    var name=document.getElementById("txtName").value;
+    var Street=document.getElementById("txtStreet").value;
+    var city=document.getElementById("txtcity").value;
+    var State=document.getElementById("txtState").value;
+    var Zipcode=document.getElementById("txtzipcode").value;
+    var formattedAdress=name+"</br>"+street+"<br/>"+city+","+State+" "+Zipcode;
+    document.getElementById("outputDiv").innerHTML=formattedAdress;
+}
+
+</script></head><body><div id="inputDiv">Name:<input type="text" id="txtName"/><br/>Street:<input type="text" id="txtStreet"/><br/>City:<input type="text" id="txtcity"/><br/>State:<input type="text" id="txtState"/><br/>Zip code:<input type="text" id="txtzipcode"/><br/><button type="button"onclick="makeAdress()">MakeAddress</button><br/></div><div id="outputDiv"></div></body></html>
